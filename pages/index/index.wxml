@@ -1,0 +1,19 @@
+<swiper autoplay="true" indicator-dots="true" interval="5000">
+  <swiper-item>
+    <image src="/image/family/banner_1.jpg" mode="" />
+  </swiper-item>
+  <swiper-item>
+    <image src="/image/family/banner_2.jpg" mode="" />
+  </swiper-item>
+</swiper>
+<view class="title">
+  <text>--- 科 Family ---</text>
+</view>
+  <block wx:for="{{fadataall}}" wx:key="familyId">
+    <view catchtap="change" data-family-id="{{item.familyId}}">
+      <view class="family">
+        <image src="{{item.familyImg}}"></image>
+        <text>{{item.familyName}}</text>
+      </view>
+    </view>
+  </block>

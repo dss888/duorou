@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/index/genus/genus",
+    "pages/index/spes/spes",
+    "pages/index/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#8bc34a",
+   
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "图鉴",
+      "iconPath": "image/tujian_icon_normal.png",
+      "selectedIconPath": "image/tujian_icon_pressed.png"
+    },{
+      "pagePath":  "pages/find/find",
+      "text": "发现",
+      "iconPath": "/image/faxian_icon_normal.png",
+      "selectedIconPath": "/image/faxian_icon_pressed.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

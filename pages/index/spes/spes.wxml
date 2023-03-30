@@ -1,0 +1,14 @@
+<view>
+  <view class="title">
+    <text>--- 种 Species ---</text>
+  </view>
+ 
+  <block wx:for="{{speKey}}" wx:key="speId">
+    <view class="family" catchtap="change" data-spe-id="{{item.speId}}">
+      <image src="{{item.speImg}}"></image>
+      <text>{{item.speName}}</text>
+    </view>
+  </block>
+  
+ 
+</view>
